@@ -1,9 +1,5 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 
-
-let listaNumerosSorteados = [];
-let numeroMaximo = 10;
-
 let amigos = [];
 
 function limpiarCampoDeEntrada() {
@@ -16,16 +12,15 @@ function agregarAmigo() {
     if (nombre.trim() == "") {
         alert("Por favor, inserte un nombre.");
     } else {
-        amigos.push(nombre);
-        mostrarAmigos(); // Vuelve a renderizar la lista con el nuevo amigo
-        limpiarCampoDeEntrada();
+        // Verifica si el amigo ya está en la lista
+        if(amigos.includes(nombre)) {
+            alert("Este nombre ya está en la lista.");
+        } else {
+            amigos.push(nombre);
+            mostrarAmigos(); // Vuelve a renderizar la lista con el nuevo amigo
+            limpiarCampoDeEntrada();
+        }
     }
-}
-
-function asignarTextoAElemento(elemento, texto) {
-    let elementoHTML = document.getElementById(elemento);
-    elementoHTML.textContent = texto;
-return;
 }
 
 // Función para mostrar la lista de amigos
@@ -34,43 +29,55 @@ function mostrarAmigos() {
     // También se podría usar document.querySelector('#listaAmigos');
     const listaAmigos = document.getElementById('listaAmigos');
 
-    // Limpia la lista antes de añadir nuevos elementos (útil si la función se llama varias veces)
+    // Limpia la lista antes de añadir nuevos elementos 
+    // (útil si la función se llama varias veces)
     listaAmigos.innerHTML = '';
 
-    // Itera sobre el arreglo de amigos usando un bucle for
-    // En conjunto, realizan una de las tareas más comunes en el desarrollo web dinámico: 
-    // crear un nuevo elemento, darle contenido y añadirlo a la página para que el usuario pueda verlo.
+    // Itera sobre el arreglo de amigos usando un bucle for. En conjunto,
+    // realizan una de las tareas más comunes en el desarrollo web dinámico: 
+    // crear un nuevo elemento, darle contenido y 
+    // añadirlo a la página para que el usuario pueda verlo.
     for (let i = 0; i < amigos.length; i++) {
         // Crea un nuevo elemento LI para cada amigo
-        // Esta línea se encarga de crear un nuevo elemento HTML en la memoria del navegador,
+        // Crea un nuevo elemento HTML del tipo especificado
+        // en la memoria del navegador,
         // pero todavía no lo hace visible en la página.
-        // Crea un elemento HTML del tipo especificado
-        // El argumento 'li' significa que el elemento a crear es un ítem de lista (<li>)
-        // El elemento <li> recién creado (que por ahora está vacío) se asigna a una variable constante llamada nuevoAmigoLi
+        // El argumento 'li' significa que el elemento a crear 
+        // es un ítem de lista (<li>)
+        // El elemento <li> recién creado (que por ahora está vacío) 
+        // se asigna a una variable constante llamada nuevoAmigoLi
         // Se usa const porque la referencia a este elemento no cambiará.
 
         const nuevoAmigoLi = document.createElement('li');
 
-        // Asigna el nombre del amigo como contenido de texto al elemento LI
-        // toma el elemento <li> que se creó en el paso anterior y le añade contenido de texto.
+        // toma el elemento <li> que se creó en el paso anterior 
+        // y le añade el nombre del amigo como contenido de texto 
         // nuevoAmigoLi: Es el elemento <li> que creamos antes
-        // .textContent: Es una propiedad de los elementos HTML que permite establecer o obtener su contenido de texto.
-        // Es una forma segura de añadir texto, ya que ignora cualquier etiqueta HTML que pudiera contener el texto,
+        // .textContent: Es una propiedad de los elementos HTML
+        // que permite establecer o obtener su contenido de texto.
+        // Es una forma segura de añadir texto, ya que ignora 
+        // cualquier etiqueta HTML que pudiera contener el texto,
         // evitando problemas de seguridad.
         // = amigos[i]: Asigna un valor a la propiedad textContent
-        // e establece el texto del <li> con un valor de la lista amigos
-        // Por ejemplo, si amigos[i] es "Ana", el elemento <li> ahora contendrá el texto "Ana".
+        // establece el texto del <li> con un valor de la lista amigos
+        // Por ejemplo, si amigos[i] es "Alexandra", 
+        // el elemento <li> ahora contendrá el texto "Alexandra".
 
         nuevoAmigoLi.textContent = amigos[i];
 
         // Añade el elemento LI a la lista UL
-        // Esta es la línea final que hace que el nuevo ítem de lista aparezca en la página web.
-        // listaAmigos: Es una variable que debe contener una referencia a un elemento que ya existe en el HTML,
-        // típicamente una lista no ordenada (<ul>) o una lista ordenada (<ol>)
-        // .appendChild(): Es un método que agrega un elemento como el último hijo de otro elemento.
-        // (nuevoAmigoLi): Es el elemento que se va a añadir. En este caso, es nuestro <li> que ya tiene su texto.
-        // Se toma el elemento <li> (creado y con texto) y se inserta al final de la lista 
-        // representada por listaAmigos en el documento HTML, haciéndolo visible para el usuario.
+        // Línea final para que el nuevo ítem de lista aparezca en la página web.
+        // listaAmigos: variable que contiene una referencia 
+        // a un elemento que ya existe en el HTML, típicamente 
+        // una lista no ordenada (<ul>) o una lista ordenada (<ol>)
+        // .appendChild(): Es un método que agrega un elemento 
+        // como el último hijo de otro elemento.
+        // (nuevoAmigoLi): Es el elemento que se va a añadir. 
+        // En este caso, es nuestro <li> que ya tiene su texto.
+        // Se toma el elemento <li> (creado y con texto) 
+        // y se inserta al final de la lista 
+        // representada por listaAmigos en el documento HTML, 
+        // haciéndolo visible para el usuario.
 
         listaAmigos.appendChild(nuevoAmigoLi);
     }
@@ -83,32 +90,22 @@ function sortearAmigo() {
         return;
     }
     let numeroGenerado = Math.floor(Math.random() * numeroMaximo) + 1;
+/*
+//  depuración paso a paso:
+    let aleatorio = Math.random();
+    console.log(aleatorio);
+    let escalado = aleatorio * numeroMaximo;
+    console.log(escalado);
+    let desescalado = Math.floor(escalado);
+    console.log(desescalado);
+    let numeroGenerado = desescalado + 1;
     console.log(numeroGenerado);
-    console.log(listaNumerosSorteados);
-
+    console.log(numeroMaximo);
+    console.log(amigos);
+*/
     let resultadoAMostrar = document.getElementById("resultado");
-    resultadoAMostrar.innerHTML = "el ganador es " + amigos[numeroGenerado - 1];
+    resultadoAMostrar.innerHTML = "El amigo secreto sorteado es: " + amigos[numeroGenerado - 1];
     return;
-
-
-    /*
-    //   si ya sorteamos todos los números
-    if(listaNumerosSorteados.length == numeroMaximo) {
-        let resultadoAMostrar = document.getElementById("resultado");
-        resultadoAMostrar.innerHTML = "el ganador es " + amigos[numeroGenerado - 1];
-        return;
-    }
-    else {
-        // si el número generado está incluido en la lista
-        if(listaNumerosSorteados.includes(numeroGenerado)) {
-            return sortearAmigo();
-        } else {
-            
-            listaNumerosSorteados.push(numeroGenerado);
-            return numeroGenerado;
-        }
-    }
-    */    
 }
 
 

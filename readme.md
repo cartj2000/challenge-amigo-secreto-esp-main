@@ -1,4 +1,4 @@
-![mage_Alt][(https://github.com/cartj2000/challenge-amigo-secreto-esp-main/blob/3f8299624f1be5464b7c161287aeab069e71c7f6/amigo%20secreto.JPG)
+![mage_Alt](https://github.com/cartj2000/challenge-amigo-secreto-esp-main/blob/3f8299624f1be5464b7c161287aeab069e71c7f6/amigo%20secreto.JPG)
 <h1 align="center"> Desafio Amigo Secreto </h1>
 <h2 align="center">
 :white_check_mark: Desafio amigo secreto :white_check_mark:

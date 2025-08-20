@@ -7,20 +7,26 @@
 :white_check_mark: Desafio amigo secreto :white_check_mark:
 </h2>
 
-## :hammer:
+## :triangular_ruler:
 Funcionalidades del proyecto
+
+## :clapper:
 - `Insertar Nombre`: Adicionar nuevo nombre
 - `Realizar sorteo`: Generar el nombre ganador-
 
-## :hammer:
-El usuario digita un nombre y al oprimir el botón "Añadir"-
-Va agregando dicho nombre en una lista-
-Si no ha digitado un nombre y oprime el botón "Añadir" muestra un mensaje-
-indicando que se debe ingresar un nombre válido-
-Si digita un nombre y ya está muestra un mensaje-
-indicando que el nombre ya fue ingresado-
-Una vez digitados todos los nombres, al oprimir el botón "Sortear amigo"-
-Se realiza un sorteo aleatorio y muestra el resultado en la pantalla-
+## :pencil2:
+El usuario digita un nombre y al oprimir el botón "Añadir", Va agregando dicho nombre en una lista-
+
+## :no_entry:
+Si no ha digitado un nombre y oprime el botón "Añadir" muestra un mensaje, indicando que se debe ingresar un nombre válido-
+
+## :heavy_exclamation_mark:
+Si digita un nombre y ya está muestra un mensaje, indicando que el nombre ya fue ingresado-
+
+## :pushpin:
+Una vez digitados todos los nombres, al oprimir el botón "Sortear amigo", Se realiza un sorteo aleatorio y muestra el resultado en la pantalla-
+
+## :shipit:
 o sea el amigo secreto sorteado es y el nombre correspondiente-
 
 <h3 align="center">

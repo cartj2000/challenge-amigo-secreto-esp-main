@@ -8,27 +8,39 @@
 </h2>
 
 ## :triangular_ruler:
-Funcionalidades del proyecto
+Descripción del proyecto:
 
 ## :clapper:
 - `Insertar Nombre`: Adicionar nuevo nombre
-- `Realizar sorteo`: Generar el nombre ganador-
+- `Realizar sorteo`: Generar el nombre ganador
 
 ## :pencil2:
-El usuario digita un nombre y al oprimir el botón "Añadir", Va agregando dicho nombre en una lista-
+El usuario digita un nombre y al oprimir el botón "Añadir", Va agregando dicho nombre en una lista
 
 ## :no_entry:
-Si no ha digitado un nombre y oprime el botón "Añadir" muestra un mensaje, indicando que se debe ingresar un nombre válido-
+Si no ha digitado un nombre y oprime el botón "Añadir" muestra un mensaje, indicando que se debe ingresar un nombre válido
 
 ## :heavy_exclamation_mark:
-Si digita un nombre y ya está muestra un mensaje, indicando que el nombre ya fue ingresado-
+Si digita un nombre y ya está muestra un mensaje, indicando que el nombre ya fue ingresado
 
 ## :pushpin:
-Una vez digitados todos los nombres, al oprimir el botón "Sortear amigo", Se realiza un sorteo aleatorio y muestra el resultado en la pantalla-
+Una vez digitados todos los nombres, al oprimir el botón "Sortear amigo", Se realiza un sorteo aleatorio y muestra el resultado en la pantalla
 
 ## :shipit:
-o sea el amigo secreto sorteado es y el nombre correspondiente-
+o sea el amigo secreto sorteado es y el nombre correspondiente
 
 <h3 align="center">
 :rocket: Tecnologías usadas: JavaScript
 </h3>
+
+## :key:
+Detalles:
+
+## :flashlight:
+- Acceso al proyecto: a través de GitHub
+- Estado del proyecto: funcional 100%
+- Características de la aplicación: Desafio Alura Latam
+- Desarrolladores: Carlos Torres
+- Licencia: código abierto
+- Conclusión: El objetivo fue conseguido: repasar el aprendizaje y profundizar investigando
+

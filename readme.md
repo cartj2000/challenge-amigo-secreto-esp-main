@@ -1,11 +1,12 @@
 ![mage_Alt](https://github.com/cartj2000/challenge-amigo-secreto-esp-main/blob/3f8299624f1be5464b7c161287aeab069e71c7f6/amigo%20secreto.JPG)
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<h1 align="center">Hola , mi nombre es Carlos <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
-<picture> <img align="right" src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width = 250px></picture>
 <h1 align="center"> Desafio Amigo Secreto </h1>
 <h2 align="center">
 :white_check_mark: Desafio amigo secreto :white_check_mark:
 </h2>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<h1 align="center">Hola , mi nombre es Carlos <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
+<picture> <img align="right" src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width = 250px></picture>
 
 ## :triangular_ruler:
 Descripción del proyecto:

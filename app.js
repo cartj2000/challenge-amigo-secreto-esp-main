@@ -6,11 +6,21 @@ function limpiarCampoDeEntrada() {
 document.querySelector("#amigo").value = "";
 }
 
+//verificar si el nombre solo contiene letras y no números o caracteres especiales
+function esNombreValido(nombre) {
+    const regex = /^[A-Za-z\s]+$/;
+    return regex.test(nombre);
+}   
+
 // Función para agregar un amigo y actualizar la lista
 function agregarAmigo() {
     let nombre = document.getElementById("amigo").value;
-    if (nombre.trim() == "") {
+    nombre = nombre.trim(); // Elimina espacios al inicio y al final del nombre
+    nombre = nombre.toLowerCase(); // Convierte el nombre a minúsculas
+    if (nombre.trim() == ""){
         alert("Por favor, inserte un nombre.");
+    } else if (!esNombreValido(nombre)) {
+        alert("El nombre solo debe contener letras.");
     } else {
         // Verifica si el amigo ya está en la lista
         if(amigos.includes(nombre)) {
